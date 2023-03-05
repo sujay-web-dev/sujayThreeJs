@@ -13,6 +13,24 @@
   color-scheme: dark;
 }
 
+.threeDcomputer__parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96vw ;
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 17%;
+  height: 80%;
+  
+
+}
+
+.threeDcomputer{  
+  /* border: 2px solid greenyellow; */
+  margin: 5px;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
