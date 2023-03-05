@@ -7,6 +7,12 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  const [timeoutBool, setimeoutBool] = useState(false);
+
+  setTimeout(() => {
+    setimeoutBool(true);
+  }, 500);
+
   useEffect(() => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -63,7 +69,7 @@ const Hero = () => {
           }}
           className="threeDcomputer"
         >
-          <ComputersCanvas />
+          {timeoutBool && <ComputersCanvas />}
         </div>
       </div>
 
