@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
+import webdev from "../assets/webdev.png";
+
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -58,20 +60,26 @@ const Hero = () => {
         </div>
       </div>
 
-      <div
-        style={{ top: `${isMobile ? "-1%" : "19%"}` }}
-        className="threeDcomputer__parent"
-      >
-        <div
-          style={{
-            width: `${isMobile ? "98vw" : "80vw"}`,
-            height: `${isMobile ? "80%" : "90%"}`,
-          }}
-          className="threeDcomputer"
-        >
-          {timeoutBool && <ComputersCanvas />}
+      {isMobile ? (
+        <div className="homeImg">
+          <img src={webdev} alt="" className="homeImg__tag" />
         </div>
-      </div>
+      ) : (
+        <div
+          style={{ top: `${isMobile ? "-1%" : "19%"}` }}
+          className="threeDcomputer__parent"
+        >
+          <div
+            style={{
+              width: `${isMobile ? "98vw" : "80vw"}`,
+              height: `${isMobile ? "80%" : "90%"}`,
+            }}
+            className="threeDcomputer"
+          >
+            {timeoutBool && <ComputersCanvas />}
+          </div>
+        </div>
+      )}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
