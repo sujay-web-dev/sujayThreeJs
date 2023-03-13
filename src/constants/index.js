@@ -15,14 +15,12 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  reformx,
   carrent,
   jobit,
   tripguide,
   threejs,
+  carelon,
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +40,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Smart Contract Developer",
+    icon: mobile,
+  },
+  {
+    title: "Open Source Contributor",
     icon: creator,
   },
 ];
@@ -100,57 +98,35 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Senior Software Engineer",
+    company_name: "Carelon Global Solutions",
+    icon: carelon,
+    iconBg: "#ffffff",
+    date: "June 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Modernization of Legacy Web Application",
+      "I played a crucial role in the modernization of a healthcare application by implementing a user-centered design approach and utilizing React JS, Redux, and Material UI.",
+      "This resulted in a significant 30% improvement in user experience.",
+      "Through collaboration with the backend development, QA, and testing teams, I helped meet product requirements and achieved a 30% reduction in bug reports and improved system stability.",
+      "I was a key contributor to the development of a major healthcare insurance web application using Angular & Typescript. ",
+      "My efforts resulted in the successful delivery of complex screens with extensive field validations, leading to a 25% reduction in errors.",
+      "I ensured seamless integration with the overall application through the development of REST/Web API and thorough testing with Postman."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Software Engineer",
+    company_name: "REFORMX",
+    icon: reformx,
+    iconBg: "#CBEDFF",
+    date: "Sep 2018 - June 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed an in-house web app using React that allowed for Employees to manage HR processes,Recruitment, to increase Recruiter productivity.",
+      "Implemented continuous integration and delivery.",
+      "Used React Axios to call Web APIs to fetch data from backend and update the states in the store of Redux.",
+      "Worked on responsive design and developed a single page responsive website that could be served to desktop, tablets and mobile users using ReactJs.",
+
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }  
 ];
 
 const testimonials = [

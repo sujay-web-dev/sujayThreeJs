@@ -10,6 +10,21 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav
       className={`${
@@ -29,8 +44,8 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Sujay &nbsp;
-            <span className="sm:block hidden"> | JavaScript </span>
+            Sujay &nbsp;<span className="sm:block hidden text-[18px]">|&nbsp;</span>
+            <span className="sm:block hidden text-[16px] mt-0.5">&nbsp;React . Node . Solidity </span>
           </p>
         </Link>
 
