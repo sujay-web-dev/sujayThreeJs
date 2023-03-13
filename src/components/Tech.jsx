@@ -12,10 +12,10 @@ const Tech = () => {
   }, 1000);
 
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
+    <div className="flex flex-row flex-wrap justify-center gap-1">
       {timeoutBool &&
         technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
+          <div className="w-20 h-20 m-1 flex justify-center items-center" key={technology.name}>
             <BallCanvas icon={technology.icon} />
           </div>
         ))}

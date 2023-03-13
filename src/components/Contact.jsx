@@ -149,17 +149,10 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className={`xl:flex-1 xl:h-auto md:h-[550px] h-[${
-          isMobile ? "150px" : "300px "
-        }]`}
+        className={`xl:flex-1 xl:h-auto md:h-[550px] h-[${isMobile ? "180px" : "300px "
+          }]`}
       >
-        {isMobile ? (
-          <div className="contactImg">
-            <img src={contact} alt="" className="contactImg__tag" />
-          </div>
-        ) : (
-          <EarthCanvas />
-        )}
+        <EarthCanvas />
       </motion.div>
     </div>
   );

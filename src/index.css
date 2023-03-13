@@ -17,24 +17,28 @@
   border: 2px solid red;
 }
 
+.techBall{
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 4px rgba(149, 138, 255, 0.432);
+  border-radius: 50%;
+}
+
 .threeDcomputer__parent{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 96vw ;
-  /* border: 2px solid red; */
   position: absolute;
   top: 17%;
   height: 80%;
 }
 
 .threeDcomputer{  
-  /* border: 2px solid greenyellow; */
   margin: 5px;
 }
 
 .homeImg{
-  /* border: 2px solid red; */
   width: 98%;
   display: flex;
   align-items: center;

@@ -47,39 +47,32 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h2 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Sujay</span>
-          </h1>
+          </h2>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
+            Experienced Software Engineer with 5+ years in Frontend and Backend Development for Web Apps and Smart Contracts on Blockchains. <br className="sm:block hidden" />
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, veritatis.
+              Proficient in React JS, Node JS, and Solidity
             </p>
           </p>
         </div>
       </div>
-
-      {isMobile ? (
-        <div className="homeImg">
-          <img src={webdev} alt="" className="homeImg__tag" />
-        </div>
-      ) : (
+      <div
+        style={{ top: `${isMobile ? "-1%" : "19%"}` }}
+        className="threeDcomputer__parent"
+      >
         <div
-          style={{ top: `${isMobile ? "-1%" : "19%"}` }}
-          className="threeDcomputer__parent"
+          style={{
+            width: `${isMobile ? "98vw" : "80vw"}`,
+            height: `${isMobile ? "80%" : "90%"}`,
+          }}
+          className="threeDcomputer"
         >
-          <div
-            style={{
-              width: `${isMobile ? "98vw" : "80vw"}`,
-              height: `${isMobile ? "80%" : "90%"}`,
-            }}
-            className="threeDcomputer"
-          >
-            {timeoutBool && <ComputersCanvas />}
-          </div>
+          {timeoutBool && <ComputersCanvas />}
         </div>
-      )}
+      </div>
+
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
