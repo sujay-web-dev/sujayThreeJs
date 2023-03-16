@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -17,15 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" >
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -62,12 +54,25 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
-    </motion.div>
+      </div>
   );
 };
 
 const Works = () => {
+
+  const [domains, setDomains] = useState(["React JS","MERN Stack","Dapps","Smart Contract","All"]);
+  const [filteredProj, setFilteredProj] = useState(projects)
+
+  const filterDomains = (domain) => {
+    let filteredProjects;
+    if(domain != "All"){
+      filteredProjects = projects.filter(e=>e.domain == domain)
+    }else {
+      filteredProjects=projects;
+    }
+    setFilteredProj(filteredProjects);
+  }
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -88,8 +93,16 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+      <div className="domains">
+        {domains.map((e)=>(
+          <button onClick={() => filterDomains(e)} className="domains__each">
+            <h2>{e}</h2>
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-10 flex flex-wrap gap-7">
+        {filteredProj.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
