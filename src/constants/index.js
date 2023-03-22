@@ -16,11 +16,18 @@ import {
   figma,
   docker,
   reformx,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   carelon,
+  netflix,
+  covid,
+  amazon,
+  youtube,
+  airbnb,
+  hulu,
+  sass,
+  Solidity,
+  hardhat,
+  angular
 } from "../assets";
 
 export const navLinks = [
@@ -59,14 +66,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -83,6 +82,10 @@ const technologies = [
     icon: redux,
   },
   {
+    name: "Sass",
+    icon: sass,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
   },
@@ -93,12 +96,24 @@ const technologies = [
   {
     name: "git",
     icon: git,
+  },  
+  {
+    name: "solidity",
+    icon: Solidity,
   },
+  {
+    name: "hardhat",
+    icon: hardhat,
+  },
+  {
+    name: "angular",
+    icon: angular,
+  }
 ];
 
 const experiences = [
   {
-    title: "Senior Software Engineer",
+    title: "Software Engineer",
     company_name: "Carelon Global Solutions",
     icon: carelon,
     iconBg: "#ffffff",
@@ -159,31 +174,32 @@ const testimonials = [
 const projects = [
   {
     domain:"React JS",
-    name: "Car Rent",
+    name: "Netflix Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A React JS Web App ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "material ui",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "flexbox",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: netflix,
+    web_link:"https://sujayflix.web.app/",
+    source_code_link: "https://github.com/sujay-web-dev/netflix-clone/tree/master",
   },
   {
-    domain:"MERN Stack",
-    name: "Job IT",
+    domain:"React JS",
+    name: "Covid Tracker",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A React JS Web App ",
     tags: [
       {
         name: "react",
@@ -194,69 +210,26 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "material ui",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    domain:"Dapps",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-  {
-    domain:"Smart Contract",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: covid,
+    web_link:"https://sujay-covid19-tracker.web.app/",
+    source_code_link: "https://github.com/sujay-web-dev/covid-19-tracker/tree/main",
   },
   {
     domain:"React JS",
-    name: "Trip Guide",
+    name: "Hulu Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A React JS Web App ",
     tags: [
       {
-        name: "nextjs",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Redux",
         color: "green-text-gradient",
       },
       {
@@ -264,21 +237,22 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: hulu,
+    web_link:"https://sujay-hulu.web.app/",
+    source_code_link: "https://github.com/sujay-web-dev/hulu-clone",
   },
   {
-    domain:"MERN Stack",
-    name: "Trip Guide",
+    domain:"React JS",
+    name: "AirBnb Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A React JS Web App ",
     tags: [
       {
-        name: "nextjs",
+        name: "Reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Redux",
         color: "green-text-gradient",
       },
       {
@@ -286,77 +260,56 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: airbnb,
+    web_link:"https://sujay-airbnb.web.app/",
+    source_code_link: "https://github.com/sujay-web-dev/Airbnb",
   },
   {
-    domain:"Dapps",
-    name: "Trip Guide",
+    domain:"React JS",
+    name: "Amazon Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A React JS Web App ",
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "material ui",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: amazon,
+    web_link:"https://sujayzon.web.app/",
+    source_code_link: "https://github.com/sujay-web-dev/amazon-clone",
   },
   {
-    domain:"Smart Contract",
-    name: "Trip Guide",
+    domain:"React JS",
+    name: "Youtube Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A React JS Web App ",
     tags: [
       {
-        name: "nextjs",
+        name: "react js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "material UI",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: youtube,
+    web_link:"https://soutube-react.web.app/",
+    source_code_link: "https://github.com/sujay-web-dev/Youtube-Clone",
   },
-  {
-    domain:"Dapps",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-
-
 ];
 
 export { services, technologies, experiences, testimonials, projects };

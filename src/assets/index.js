@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import view from "./view.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -17,24 +18,53 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import tailwind from "./tech/tailwind.png";
+import angular from "./tech/angular.png";
+import award from "./tech/award.png";
+import Hackathon from "./tech/Hackathon.jpg";
+import hardhat from "./tech/hardhat.png";
+import sass from "./tech/sass.png";
+import Solidity from "./tech/Solidity.png";
 import threejs from "./tech/threejs.svg";
 
 import reformx from "./company/reformx.png";
 import carelon from "./company/carelon.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import netflix from "./netflix.png";
+import covid from "./covid.png";
+import amazon from "./amazon.png";
+import youtube from "./youtube.png";
+import airbnb from "./airbnb.png";
+import hulu from "./hulu.png";
+
+import email from "./email.png";
+import mobileLogo from "./mobileLogo.png";
+import linkedin from "./linkedin.png";
+import twitter from "./twitter.png";
+import githubLogo from "./githubLogo.png";
 
 export {
+  Solidity,
+  sass,
+  hardhat,
+  Hackathon,
+  award,
+  angular,
+
+  email,
+  mobileLogo,
+  linkedin,
+  twitter,
+  githubLogo,
+  
   logo,
   backend,
   creator,
   mobile,
   web,
   github,
+  view,
   menu,
   close,
   css,
@@ -52,7 +82,10 @@ export {
   threejs,
   carelon,
   reformx,
-  carrent,
-  jobit,
-  tripguide,
+  netflix,
+  covid,
+  amazon,
+  youtube,
+  airbnb,
+  hulu,
 };
