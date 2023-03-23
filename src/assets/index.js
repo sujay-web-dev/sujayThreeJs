@@ -43,6 +43,8 @@ import mobileLogo from "./mobileLogo.png";
 import linkedin from "./linkedin.png";
 import twitter from "./twitter.png";
 import githubLogo from "./githubLogo.png";
+import closeLogo from "./close.png";
+
 
 export {
   Solidity,
@@ -57,7 +59,8 @@ export {
   linkedin,
   twitter,
   githubLogo,
-  
+  closeLogo,
+
   logo,
   backend,
   creator,
