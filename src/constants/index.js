@@ -176,7 +176,7 @@ const projects = [
     domain:"React JS",
     name: "Netflix Clone",
     description:
-      "A React JS Web App ",
+      "A React JS Web App with Firebase Backend Used TMDB API Key for Movies database ",
     tags: [
       {
         name: "react",
@@ -199,7 +199,7 @@ const projects = [
     domain:"React JS",
     name: "Covid Tracker",
     description:
-      "A React JS Web App ",
+      `In this web app i have used "disease.sh" for getting covid-19 counts with there API key and used "react-leaflet" for map usage in the web app.`,
     tags: [
       {
         name: "react",
@@ -222,7 +222,7 @@ const projects = [
     domain:"React JS",
     name: "Hulu Clone",
     description:
-      "A React JS Web App ",
+      `Hulu-clone-App-Made-from-Reactjs-with-Firebase-Backend Used TMDB API Key for Movies database and intergrated into this App. `,
     tags: [
       {
         name: "React JS",
@@ -245,7 +245,7 @@ const projects = [
     domain:"React JS",
     name: "AirBnb Clone",
     description:
-      "A React JS Web App ",
+      "This project is built with React.js as front end framework and Firebase as a backend. Used react-router-dom (BrowserRouter, Switch, Route, useHistory) for Navigating through diffrent pages.",
     tags: [
       {
         name: "Reactjs",
@@ -268,7 +268,7 @@ const projects = [
     domain:"React JS",
     name: "Amazon Clone",
     description:
-      "A React JS Web App ",
+      "This project is built with React.js as front end framework and Firebase as a backend. In this project I have used UseEffect, UseState React Hooks",
     tags: [
       {
         name: "reactjs",
@@ -291,7 +291,7 @@ const projects = [
     domain:"React JS",
     name: "Youtube Clone",
     description:
-      "A React JS Web App ",
+      "A React JS Web App Used react-router-dom (BrowserRouter, Switch, Route, useHistory, Link) for Navigating through diffrent pages used the Material UI for Buttons, Avatar, Icons.",
     tags: [
       {
         name: "react js",
