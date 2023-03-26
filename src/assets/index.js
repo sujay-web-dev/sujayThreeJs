@@ -44,6 +44,7 @@ import linkedin from "./linkedin.png";
 import twitter from "./twitter.png";
 import githubLogo from "./githubLogo.png";
 import closeLogo from "./close.png";
+import eventSC from "./eventSC.png";
 
 
 export {
@@ -60,6 +61,7 @@ export {
   twitter,
   githubLogo,
   closeLogo,
+  eventSC,
 
   logo,
   backend,

@@ -140,9 +140,15 @@
 }
 
 .hash-span {
-  margin-top: -60px;
-  padding-bottom: 60px;
+  margin-top: -50px;
+  padding-bottom: 50px;
   display: block;
+}
+
+.resume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .black-gradient {
@@ -428,13 +434,20 @@
 
 }
 
+.downIcon{
+  margin-right: 5px;
+}
+
 .app__resume-download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #1825af;
+  color: #915EFF;
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
@@ -443,6 +456,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-bottom: 30px;
 }
 
 .app__resume-download-btn:active {
