@@ -29,6 +29,10 @@ import {
   hardhat,
   angular,
   eventSC,
+  crowdDapp,
+  MERNAdmin,
+  ecomMERN,
+  AdminMern_1,
 } from "../assets";
 
 export const navLinks = [
@@ -193,7 +197,6 @@ const projects = [
     source_code_link:
       "https://github.com/sujay-web-dev/crowd-funding-smart-contract",
   },
-
   {
     domain: "MERN Stack",
     name: "MERN Admin DashBoard",
@@ -212,11 +215,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: eventSC,
+    image: MERNAdmin,
     web_link: "https://github.com/sujay-web-dev/MERN_Admin_DashBoard",
     source_code_link: "https://github.com/sujay-web-dev/MERN_Admin_DashBoard",
   },
-
   {
     domain: "Dapps",
     name: "Dapp Crowd Funding",
@@ -235,11 +237,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: eventSC,
-    web_link: "https://github.com/sujay-web-dev/Dapp-Crowd-Funding",
-    source_code_link: "https://sensational-snickerdoodle-6d6dc0.netlify.app/",
+    image: crowdDapp,
+    web_link: "https://sensational-snickerdoodle-6d6dc0.netlify.app/",
+    source_code_link: "https://github.com/sujay-web-dev/Dapp-Crowd-Funding",
   },
-
   {
     domain: "MERN Stack",
     name: "BackEnd E-Commerce",
@@ -258,11 +259,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: eventSC,
+    image: AdminMern_1,
     web_link: "https://github.com/sujay-web-dev/bigEcomApp",
     source_code_link: "https://github.com/sujay-web-dev/bigEcomApp",
   },
-
   {
     domain: "React JS",
     name: "Covid Tracker",
@@ -355,7 +355,6 @@ const projects = [
       "https://goerli.etherscan.io/address/0x28ed4f6f95884062b980220ab52ab7603eefb82e",
     source_code_link: "https://github.com/sujay-web-dev/Lottery_Solidity",
   },
-
   {
     domain: "MERN Stack",
     name: "MERN E-Commerce App",
@@ -378,7 +377,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: eventSC,
+    image: ecomMERN,
     web_link: "https://github.com/sujay-web-dev/e-commerce",
     source_code_link: "https://github.com/sujay-web-dev/e-commerce",
   },

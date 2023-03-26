@@ -45,7 +45,10 @@ import twitter from "./twitter.png";
 import githubLogo from "./githubLogo.png";
 import closeLogo from "./close.png";
 import eventSC from "./eventSC.png";
-
+import crowdDapp from "./crowdDapp.png";
+import MERNAdmin from "./MERNAdmin.png";
+import ecomMERN from "./ecomMERN.png";
+import AdminMern_1 from "./AdminMern_1.png";
 
 export {
   Solidity,
@@ -62,6 +65,10 @@ export {
   githubLogo,
   closeLogo,
   eventSC,
+  crowdDapp,
+  MERNAdmin,
+  ecomMERN,
+  AdminMern_1,
 
   logo,
   backend,
