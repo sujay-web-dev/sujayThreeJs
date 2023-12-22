@@ -87,12 +87,12 @@ const Works = () => {
 
   return (
     <>
-      <motion.div>
+      <motion.div className="about_header_details">
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex about_header_details">
         <motion.p
           // variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -113,7 +113,7 @@ const Works = () => {
         ))}
       </div>
 
-      <div className="mt-10 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7 about_header_details">
         {filteredProj?.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
