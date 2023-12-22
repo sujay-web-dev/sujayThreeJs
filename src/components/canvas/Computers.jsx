@@ -29,8 +29,8 @@ const Computers = ({ isMobile }) => {
       {timeoutBool && (
         <primitive
           object={computer.scene}
-          scale={isMobile ? 0.5 : 0.75}
-          position={isMobile ? [0, -3, -1] : [0, -3.25, -1.5]}
+          scale={isMobile ? 0.5 : 0.6}
+          position={isMobile ? [0, -3, -1] : [0, -3.05, -1.1]}
           rotation={[-0.01, -0.2, -0.1]}
         />
       )}

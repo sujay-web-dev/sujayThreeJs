@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
 import { award, closeLogo, Hackathon, view } from "../assets";
+import { FaDownload } from 'react-icons/fa';
 
 
 const Feedbacks = () => {
@@ -56,6 +56,9 @@ const Feedbacks = () => {
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Recognitions</p>
           <h2 className={styles.sectionHeadText}>&nbsp;Hackathon & Award</h2>
+          <div className="resume">
+            <button className='app__resume-download-btn' onClick={onButtonClick}><FaDownload className="downIcon" />Resume.pdf</button>
+          </div>
           <div className="awards">
             <div className="Hackathon">
               <img src={Hackathon} className="awards__img" alt="" />
@@ -74,13 +77,11 @@ const Feedbacks = () => {
               </div>
             </div>
           </div>
-          <div className="resume">
-          <button className='app__resume-download-btn' onClick={onButtonClick}>Resume.pdf</button>
-          </div>
+          
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "resume");

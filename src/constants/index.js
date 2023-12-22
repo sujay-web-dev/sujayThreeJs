@@ -5,30 +5,27 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   reformx,
   threejs,
   honeyWell,
   carelon,
   netflix,
   covid,
-  amazon,
-  youtube,
-  airbnb,
   hulu,
   sass,
   Solidity,
   hardhat,
-  angular
+  angular,
+  eventSC,
+  crowdDapp,
+  MERNAdmin,
+  ecomMERN,
+  AdminMern_1,
 } from "../assets";
 
 export const navLinks = [
@@ -41,9 +38,14 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id:"resume",
+    title:"Resume"
+  },
+  {
     id: "contact",
     title: "Contact",
   },
+  
 ];
 
 const services = [
@@ -97,7 +99,7 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },  
+  },
   {
     name: "solidity",
     icon: Solidity,
@@ -109,7 +111,7 @@ const technologies = [
   {
     name: "angular",
     icon: angular,
-  }
+  },
 ];
 
 const experiences = [
@@ -139,7 +141,7 @@ const experiences = [
       "Through collaboration with the backend development, QA, and testing teams, I helped meet product requirements and achieved a 30% reduction in bug reports and improved system stability.",
       "I was a key contributor to the development of a major healthcare insurance web application using Angular & Typescript. ",
       "My efforts resulted in the successful delivery of complex screens with extensive field validations, leading to a 25% reduction in errors.",
-      "I ensured seamless integration with the overall application through the development of REST/Web API and thorough testing with Postman."
+      "I ensured seamless integration with the overall application through the development of REST/Web API and thorough testing with Postman.",
     ],
   },
   {
@@ -153,41 +155,13 @@ const experiences = [
       "Implemented continuous integration and delivery.",
       "Used React Axios to call Web APIs to fetch data from backend and update the states in the store of Redux.",
       "Worked on responsive design and developed a single page responsive website that could be served to desktop, tablets and mobile users using ReactJs.",
-
     ],
-  }  
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    domain:"React JS",
+    domain: "React JS",
     name: "Netflix Clone",
     description:
       "A React JS Web App with Firebase Backend Used TMDB API Key for Movies database ",
@@ -206,14 +180,104 @@ const projects = [
       },
     ],
     image: netflix,
-    web_link:"https://sujayflix.web.app/",
-    source_code_link: "https://github.com/sujay-web-dev/netflix-clone/tree/master",
+    web_link: "https://sujayflix.web.app/",
+    source_code_link:
+      "https://github.com/sujay-web-dev/netflix-clone/tree/master",
   },
   {
-    domain:"React JS",
+    domain: "Smart Contract",
+    name: "Crowd Funding Smart Contract",
+    description: `In this Solidity Smart Contract one can create a Event and others can buy tickets to the event, and details are saved in Ethereum Blockchain`,
+    tags: [
+      {
+        name: "Solidity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Remix IDE",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Goerli-Ethereum",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: eventSC,
+    web_link:
+      "https://goerli.etherscan.io/address/0x19ded13c0bd2c4d274a7ae5fd8eef2b569cf2d2a",
+    source_code_link:
+      "https://github.com/sujay-web-dev/crowd-funding-smart-contract",
+  },
+  {
+    domain: "MERN Stack",
+    name: "MERN Admin DashBoard",
+    description: `A e-Commerce Back end built with Node Js, Express JS, Mongo DB`,
+    tags: [
+      {
+        name: "Node JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mongo DB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: MERNAdmin,
+    web_link: "https://github.com/sujay-web-dev/MERN_Admin_DashBoard",
+    source_code_link: "https://github.com/sujay-web-dev/MERN_Admin_DashBoard",
+  },
+  {
+    domain: "Dapps",
+    name: "Dapp Crowd Funding",
+    description: `A e-Commerce Back end built with Node Js, Express JS, Mongo DB`,
+    tags: [
+      {
+        name: "Node JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mongo DB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: crowdDapp,
+    web_link: "https://sensational-snickerdoodle-6d6dc0.netlify.app/",
+    source_code_link: "https://github.com/sujay-web-dev/Dapp-Crowd-Funding",
+  },
+  {
+    domain: "MERN Stack",
+    name: "BackEnd E-Commerce",
+    description: `A e-Commerce Back end built with Node Js, Express JS, Mongo DB`,
+    tags: [
+      {
+        name: "Node JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mongo DB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: AdminMern_1,
+    web_link: "https://github.com/sujay-web-dev/bigEcomApp",
+    source_code_link: "https://github.com/sujay-web-dev/bigEcomApp",
+  },
+  {
+    domain: "React JS",
     name: "Covid Tracker",
-    description:
-      `In this web app i have used "disease.sh" for getting covid-19 counts with there API key and used "react-leaflet" for map usage in the web app.`,
+    description: `In this web app i have used "disease.sh" for getting covid-19 counts with there API key and used "react-leaflet" for map usage in the web app.`,
     tags: [
       {
         name: "react",
@@ -229,14 +293,14 @@ const projects = [
       },
     ],
     image: covid,
-    web_link:"https://sujay-covid19-tracker.web.app/",
-    source_code_link: "https://github.com/sujay-web-dev/covid-19-tracker/tree/main",
+    web_link: "https://sujay-covid19-tracker.web.app/",
+    source_code_link:
+      "https://github.com/sujay-web-dev/covid-19-tracker/tree/main",
   },
   {
-    domain:"React JS",
+    domain: "React JS",
     name: "Hulu Clone",
-    description:
-      `Hulu-clone-App-Made-from-Reactjs-with-Firebase-Backend Used TMDB API Key for Movies database and intergrated into this App. `,
+    description: `Hulu-clone-App-Made-from-Reactjs-with-Firebase-Backend Used TMDB API Key for Movies database and intergrated into this App. `,
     tags: [
       {
         name: "React JS",
@@ -252,78 +316,82 @@ const projects = [
       },
     ],
     image: hulu,
-    web_link:"https://sujay-hulu.web.app/",
+    web_link: "https://sujay-hulu.web.app/",
     source_code_link: "https://github.com/sujay-web-dev/hulu-clone",
   },
   {
-    domain:"React JS",
-    name: "AirBnb Clone",
-    description:
-      "This project is built with React.js as front end framework and Firebase as a backend. Used react-router-dom (BrowserRouter, Switch, Route, useHistory) for Navigating through diffrent pages.",
+    domain: "Smart Contract",
+    name: "Event Organization Smart Contract",
+    description: `In this Solidity Smart Contract one can create a Event and others can buy tickets to the event, and details are saved in Ethereum Blockchain`,
     tags: [
       {
-        name: "Reactjs",
+        name: "Solidity",
         color: "blue-text-gradient",
       },
       {
-        name: "Redux",
+        name: "Remix IDE",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Goerli-Ethereum",
         color: "pink-text-gradient",
       },
     ],
-    image: airbnb,
-    web_link:"https://sujay-airbnb.web.app/",
-    source_code_link: "https://github.com/sujay-web-dev/Airbnb",
+    image: eventSC,
+    web_link:
+      "https://goerli.etherscan.io/address/0xCD9B114a5dAaf4D0B5c4F6e4F138d156A640E754",
+    source_code_link:
+      "https://github.com/sujay-web-dev/event-organization-smart-contract",
   },
   {
-    domain:"React JS",
-    name: "Amazon Clone",
-    description:
-      "This project is built with React.js as front end framework and Firebase as a backend. In this project I have used UseEffect, UseState React Hooks",
+    domain: "Smart Contract",
+    name: "Lottery Smart Contract",
+    description: `In this Solidity Smart Contract one can create a Event and others can buy tickets to the event, and details are saved in Ethereum Blockchain`,
     tags: [
       {
-        name: "reactjs",
+        name: "Solidity",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "Remix IDE",
         color: "green-text-gradient",
       },
       {
-        name: "material ui",
+        name: "Goerli-Ethereum",
         color: "pink-text-gradient",
       },
     ],
-    image: amazon,
-    web_link:"https://sujayzon.web.app/",
-    source_code_link: "https://github.com/sujay-web-dev/amazon-clone",
+    image: eventSC,
+    web_link:
+      "https://goerli.etherscan.io/address/0x28ed4f6f95884062b980220ab52ab7603eefb82e",
+    source_code_link: "https://github.com/sujay-web-dev/Lottery_Solidity",
   },
   {
-    domain:"React JS",
-    name: "Youtube Clone",
-    description:
-      "A React JS Web App Used react-router-dom (BrowserRouter, Switch, Route, useHistory, Link) for Navigating through diffrent pages used the Material UI for Buttons, Avatar, Icons.",
+    domain: "MERN Stack",
+    name: "MERN E-Commerce App",
+    description: `A e-Commerce App built with MERN Stack which includes Login Module , Admin Dashboard & Customer Dashboard`,
     tags: [
       {
-        name: "react js",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "Node JS",
         color: "green-text-gradient",
       },
       {
-        name: "material UI",
+        name: "Express JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mongo DB",
         color: "pink-text-gradient",
       },
     ],
-    image: youtube,
-    web_link:"https://soutube-react.web.app/",
-    source_code_link: "https://github.com/sujay-web-dev/Youtube-Clone",
+    image: ecomMERN,
+    web_link: "https://github.com/sujay-web-dev/e-commerce",
+    source_code_link: "https://github.com/sujay-web-dev/e-commerce",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

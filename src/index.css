@@ -140,9 +140,15 @@
 }
 
 .hash-span {
-  margin-top: -60px;
-  padding-bottom: 60px;
+  margin-top: -50px;
+  padding-bottom: 50px;
   display: block;
+}
+
+.resume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .black-gradient {
@@ -229,6 +235,7 @@
   display: flex;
   justify-content: space-evenly;
   margin: 50px;
+  margin-top: 25px;
 }
 
 .Hackathon {
@@ -384,6 +391,10 @@
     rgba(47, 0, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.about_header_text , .about_header_details{
+  padding-left: 50px;
+}
+
 @media only screen and (max-width: 600px) {
   .contactDetails {
     padding-top: 15px;
@@ -426,15 +437,30 @@
     height: 45px;
   }
 
+  .app__resume-download-btn {
+    margin-top: 25px;
+  }
+
+  .about_header_text , .about_header_details{
+    padding-left: 10px;
+  }
+
+}
+
+.downIcon{
+  margin-right: 5px;
 }
 
 .app__resume-download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #1825af;
+  color: #915EFF;
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
@@ -443,6 +469,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  /* margin-bottom: 30px; */
 }
 
 .app__resume-download-btn:active {
@@ -454,6 +481,7 @@
 @media (min-width: 768px) {
   .app__resume-download-btn {
     padding: 0.25em 0.75em;
+    margin-top: 10px;
   }
 }
 
