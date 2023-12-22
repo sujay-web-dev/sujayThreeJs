@@ -30,6 +30,7 @@ import threejs from "./tech/threejs.svg";
 
 import reformx from "./company/reformx.png";
 import carelon from "./company/carelon.png";
+import honeyWell from "./company/Honeywell.png";
 
 import netflix from "./netflix.png";
 import covid from "./covid.png";
@@ -89,6 +90,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  honeyWell,
   carelon,
   reformx,
   netflix,

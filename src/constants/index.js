@@ -11,6 +11,8 @@ import {
   mongodb,
   git,
   reformx,
+  threejs,
+  honeyWell,
   carelon,
   netflix,
   covid,
@@ -113,6 +115,19 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Full Stack Engineer",
+    company_name: "Honeywell",
+    icon: honeyWell,
+    iconBg: "#ffffff",
+    date: "July 2023 - Present",
+    points: [
+      "Worked on Patented Aerospace Web App for Plane Engines",
+      "Implemented Aerospace web application focused on aircraft engines.",
+      "The Development of a comprehensive, full-stack solution using the MERN (MongoDB, Express.js, React, Node.js) stack. Proficiently designed and executed a robust platform for efficiently managing and organizing data related to plane engines.",
+      "Incorporated rigorous testing methodologies using the Jest framework and Selenium to ensure the robustness and reliability of the aerospace web application.",
+    ],
+  },
   {
     title: "Software Engineer",
     company_name: "Carelon Global Solutions",
