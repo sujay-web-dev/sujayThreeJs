@@ -51,7 +51,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Sujay</span>
           </h2>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Experienced Software Engineer with 5+ years in Frontend and Backend Development for Web Apps and Smart Contracts on Blockchains. <br className="sm:block hidden" />
+            Experienced Full Stack Engineer with 5+ years in Frontend and Backend Development for Web Apps and Smart Contracts on Blockchains. <br className="sm:block hidden" />
             <p>
               Proficient in React JS, Node JS, and Solidity
             </p>
