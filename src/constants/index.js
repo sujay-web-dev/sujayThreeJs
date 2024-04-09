@@ -38,14 +38,14 @@ export const navLinks = [
     title: "Work",
   },
   {
-    id:"resume",
-    title:"Resume"
+    id: "resume",
+    title: "Resume"
   },
   {
     id: "contact",
     title: "Contact",
   },
-  
+
 ];
 
 const services = [
@@ -122,10 +122,13 @@ const experiences = [
     iconBg: "#ffffff",
     date: "July 2023 - Present",
     points: [
-      "Worked on Patented Aerospace Web App for Plane Engines",
-      "Implemented Aerospace web application focused on aircraft engines.",
-      "The Development of a comprehensive, full-stack solution using the MERN (MongoDB, Express.js, React, Node.js) stack. Proficiently designed and executed a robust platform for efficiently managing and organizing data related to plane engines.",
-      "Incorporated rigorous testing methodologies using the Jest framework and Selenium to ensure the robustness and reliability of the aerospace web application.",
+      "Aerospace Engine Management Web Application Development",
+      "Involved in developing aerospace web application tailored to optimize aircraft engine operations. Employing the MERN (MongoDB, Express.js, React, Node.js) stack, orchestrated a comprehensive, full-stack solution to efficiently manage and organize critical data associated with plane engines, further enhanced by blockchain integration through Hyperledger.",
+      "Used blockchain technology developed with Hyperledger Framework, facilitating secure and immutable storage of critical aircraft engine data. Implemented smart contracts to enable seamless transactions within the blockchain network.",
+      "Implemented advanced testing methodologies, leveraging the Jest framework and Selenium, to conduct comprehensive testing and ensure the reliability and robustness of the aerospace web application.",
+      "Have strong understanding of relational databases, particularly SQL Server. ",
+      "Implemented microservice architecture and related stacks, leveraging container technologies such as Docker, ensuring scalability and flexibility of the aerospace web application.",
+      "Embraced agile methodologies for iterative development, fostering quick adaptation to evolving requirements and fostering collaboration within the development team.",
     ],
   },
   {
